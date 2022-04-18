@@ -1,7 +1,7 @@
 // for loop
 // có thể dùng break hoặc continue
 // Các parameter là biến iterator, counter và incrementor.
-// thực thi tốt với async/ await
+// thực thi tốt với async/ await vì for là hàm sync
 
 // -------------------------------------------
 // forEach
@@ -16,7 +16,7 @@ arr.forEach(num => {
 }); // Result: 0 1 2
 console.log(num); // Result: 4
 
-// Không thích hợp với async/ await vì forEach không chờ asynchronous process trong callback
+// Không thích hợp với async/ await vì forEach là async nên không chờ asynchronous process trong callback
 let count = 0;
 hello = async (items) => {
   items.forEach(async () => {
