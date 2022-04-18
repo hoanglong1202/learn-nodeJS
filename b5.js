@@ -13,12 +13,9 @@ const arr = [0, 1, 2];
 
 arr.forEach(num => {
   console.log(num);
-});
+}); // Result: 0 1 2
+console.log(num); // Result: 4
 
-// Result: 0 1 2
-console.log(num);
-
-// Result: 4
 // Không thích hợp với async/ await vì forEach không chờ asynchronous process trong callback
 let count = 0;
 hello = async (items) => {
