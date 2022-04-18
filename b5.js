@@ -32,7 +32,7 @@ someAPICall = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve("done")
-    }, 100);
+    }, 1000);
   })
 }
 hello(['1', '2', '3', '4']);
